@@ -246,9 +246,7 @@ Use listOfNames to do the following:
 */
 
 function listOfNames(array) {
-  let artistNames = array.map(({name}) => name);
 }
-console.log(listOfNames(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -325,13 +323,11 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(array, artistName){
-  const filteredName = [];
   for(let i = 0; i < array.length; i++){
     if(array[i].name === artistName){
-      filteredName.push(array[i].bio);
+      return array[i].bio;
     }
   }
-  return filteredName;
 }
 console.log(artistInfo(artists, 'Frida Kahlo'));
 
