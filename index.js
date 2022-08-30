@@ -246,6 +246,7 @@ Use listOfNames to do the following:
 */
 
 function listOfNames(array) {
+
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -301,15 +302,18 @@ Use lotsOfArt to do the following:
 🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
 */
 
+
 function lotsOfArt(array) {
   const filteredPaintings = [];
-  for(let i = 0; i < array.length; i++){
-    if(array[i].paintings > 100){
+    for(let i = 0; i < array.length; i++){
+    if(array[i].paintings >= 100){
+      filteredPaintings.push(array[i].name);
     }
   }
   return filteredPaintings;
 }
-console.log(lotsOfArt(artists));
+console.log(artistInfo(artists, 'Frida Kahlo'));
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
